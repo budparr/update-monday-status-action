@@ -15,10 +15,7 @@ try {
           { id name column_values(ids: "status") { id text }}}`;
 
   const body = core.getInput("pull-request-body");
-  const pulseId = body.substring(
-    body.lastIndexOf("/") + 1,
-    body.lastIndexOf("/") + 10
-  );
+  const pulseId = body.substring(body.lastIndexOf("/") + 10);
 
   const options = {
     method: "POST",

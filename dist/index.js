@@ -48,9 +48,9 @@ try {
   const body = core.getInput("pull-request-body");
   const pulseId = body.substring(
     body.lastIndexOf("/") + 1,
-    body.lastIndexOf("/") + 10
+    body.lastIndexOf("/") + 11
   );
-  console.log(generateMutation());
+  console.log("pulseId: ", pulseId);
   const options = {
     method: "POST",
     headers: {

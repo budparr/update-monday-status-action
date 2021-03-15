@@ -19,7 +19,7 @@ try {
     body.lastIndexOf("/") + 1,
     body.lastIndexOf("/") + 11
   );
-  console.log("pulseId: ", pulseId;
+  console.log("pulseId: ", pulseId);
   const options = {
     method: "POST",
     headers: {

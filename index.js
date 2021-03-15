@@ -19,7 +19,7 @@ try {
     body.lastIndexOf("/") + 1,
     body.lastIndexOf("/") + 10
   );
-
+  console.log(generateMutation());
   const options = {
     method: "POST",
     headers: {

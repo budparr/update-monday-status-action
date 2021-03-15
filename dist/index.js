@@ -55,7 +55,8 @@ try {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: core.getInput("API_TOKEN"),
+      Authorization: `${core.getInput("API_TOKEN")}`,
+      //core.getInput("API_TOKEN"),
     },
     body: JSON.stringify({
       query: generateMutation(core.getInput("BOARD_ID"), pulseId),

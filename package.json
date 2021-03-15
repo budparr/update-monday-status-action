@@ -1,6 +1,6 @@
 {
   "name": "update-monday-status-action",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This action will update the status column on Monday.com if a pulse url is mentioned in a pull request.",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willstenzel/update-monday-status-action.git"
+    "url": "git+https://github.com/budparr/update-monday-status-action.git"
   },
   "keywords": [],
-  "author": "Will Stenzel",
+  "author": "Will Stenzel/Bud Parr",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/willstenzel/update-monday-status-action/issues"
+    "url": "https://github.com/budparr/update-monday-status-action/issues"
   },
-  "homepage": "https://github.com/willstenzel/update-monday-status-action#readme",
+  "homepage": "https://github.com/budparr/update-monday-status-action#readme",
   "dependencies": {
     "@actions/core": "^1.1.0",
     "@actions/github": "^1.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
   }
 }

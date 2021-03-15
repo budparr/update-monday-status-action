@@ -21,7 +21,7 @@ try {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `${core.getInput("API_TOKEN")}`,
+      Authorization: `Token ${core.getInput('API_TOKEN')}`,
       //core.getInput("API_TOKEN"),
     },
     body: JSON.stringify({
